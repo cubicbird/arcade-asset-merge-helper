@@ -1,7 +1,7 @@
 import json;
 
 def process_jres_file(filename, module_name):
-    jres = json.load(open(filename + ".jres"))
+    jres = json.load(open(filename + ".jres",encoding = "utf-8"))
     result = {}
     for k, v in jres.items():
         if k.startswith("tile"):
